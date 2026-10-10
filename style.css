@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #10162b, #26386c);
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 38px;
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 20px 65px rgba(0, 0, 0, 0.25);
+}
+
+.brand {
+    color: #192442;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.brand span {
+    color: #6269e8;
+}
+
+h1 {
+    font-size: 29px;
+    color: #192442;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #7d8495;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+label {
+    display: block;
+    color: #333c50;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #dfe3ee;
+    border-radius: 10px;
+    outline: none;
+    font: inherit;
+    font-size: 14px;
+    margin-bottom: 19px;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #6269e8;
+    box-shadow: 0 0 0 3px rgba(98, 105, 232, 0.12);
+}
+
+button {
+    width: 100%;
+    background: #6269e8;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #4b52d2;
+    transform: translateY(-2px);
+}
+
+.switch {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+    color: #7d8495;
+}
+
+.switch a {
+    color: #6269e8;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.alert {
+    padding: 13px;
+    border-radius: 9px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.error {
+    background: #fff0f0;
+    color: #bc3434;
+}
+
+.success {
+    background: #e9f9ef;
+    color: #21834b;
+}
+
+.dashboard {
+    text-align: center;
+}
+
+.dashboard .brand {
+    text-align: left;
+}
+
+.welcome-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #e9f9ef;
+    color: #21834b;
+    display: grid;
+    place-items: center;
+    margin: 10px auto 22px;
+    font-size: 35px;
+}
+
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 26px 22px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
